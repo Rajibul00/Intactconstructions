@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Intactconstructions</title>
+    <link rel="stylesheet" href=".\intact.css">
+</head>
+<body>
+    <!--Heading Section-->
+    <header>
+        <nav class="navbar">
+            <a href="#" class="nav-branding">        <img src="https://i.ibb.co/8Mdfpwz/Untitled.png" alt="Intact Logo">
+            </a>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#about" class="nav-link">About Us</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#services" class="nav-link">Services</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#contact" class="nav-link">Contact Us</a>
+                </li>
+
+             </ul>
+             <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+             </div>
+        </nav>
+    </header>
+    <!--Hero Section-->
+
+<div class="main">
+    <div class="firstdiv"></div>
+    <div class="seconddiv"></div>
+ </div>
+<!--About Us Section-->
+<h1 id="about">About Us</h1>
+<div class="aboutus" >
+
+<p>Hey there , <br>
+We are Intactconstructions , our Managing Director Md. Janealam Sk is pioneer in this field . He has 25 years of experience in the field of construction and renovation area . If you choose us , we are giving assurance to you that we will put our best . <br> <br><p class="unique">Thanking you <br><p class="unique2">Md Janealam Sk & team</p></p>
+</p>
+</div>
+<!--Services-->
+<h1 class="h1service" id="services">Services</h1>
+<div class="services" >
+  
+  <div class="div1"><img src="https://i.ibb.co/6wbBrnD/construction.jpg" alt="construction image" >
+<span>CONSTRUCTION</span>
+</div>
+  <div class="div2"><img src="https://i.ibb.co/RPF89y4/renovation.jpg" alt="renovation image" ></a>
+<span>RENOVATION</span>
+</div>
+  <div  class="div3"><img src="https://i.ibb.co/xMS6NNS/property-dealing.jpg" alt="property-dealing image" >
+<span>PROPERTY DEALING</span>
+</div>
+<div class="div4">
+  <img src="https://i.ibb.co/PGG5L2p/raw-material.jpg" alt="raw-material image" >
+    <span>RAW MATERIAL SUPPLY</span>
+</div>
+</div>
+<!--Conatct Us Section-->
+<div class="contactus" id="contact">
+    <h1>Contact Us</h1>
+    <br>
+    <h3>Mobile No  : 9082768330 / 9647960851</h3>
+    <h3 class="email">Email : <a href="mailto:intactconstructions@gmail.com" id="email">intactconstructions@gmail.com</a></h3>
+    <h3>Address : New Town , Kolkata - 700135</h3>
+</div>
+</div>
+</body>
+</html>
+    <script>
+        let hamburger = document.querySelector(".hamburger");
+let navMenu = document.querySelector(".nav-menu");
+hamburger.addEventListener("click",()=>{
+    hamburger.classList.toggle("active");
+    navMenu.classList.toggle("active");
+})
+document.querySelectorAll(".nav-link").forEach(n => n.addEventListener
+    ("click",() => {
+        hamburger.classList.remove("active");
+        navMenu.classList.remove("active");
+
+    })
+    )
+    </script>
+</body>
+</html>
